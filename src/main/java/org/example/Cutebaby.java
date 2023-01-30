@@ -35,8 +35,11 @@ public class Cutebaby {
         System.out.println(votecount);
         String rank = driver.findElement(By.xpath("//span[@class=\"ranksinfoshow\"]")).getText();
         System.out.println(rank);
+        if (postclick.equals("Vote button will appear here after"))
+        {System.out.println("Voted");
+        }
 
-        //ends
+            //ends
         driver.quit();
         System.out.println("Test Suite ends");
     }
